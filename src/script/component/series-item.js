@@ -69,11 +69,11 @@ class SeriesItem extends HTMLElement {
         </style>
         
         <div class="series-info"> 
-        <h2> ${this._series.original_name} </h2>
-        <img class="backdrop_path" src="${this._series.backdrop_path}" alt="backdrop path">
+        <h2> ${this._series.name} </h2>
+        <img class="backdrop_path" src="https://image.tmdb.org/t/p/w780/${this._series.backdrop_path}" alt="backdrop_path">
             <p> ${this._series.overview} </p>
             <h4>First Air Date: ${this._series.first_air_date} </h4>
-            <h4>Vote Average: ${this._series.vote_average} </h4>
+            <h4>Rating: ${this._series.vote_average} </h4>
             <h4>Genre: ${this._series.genre_ids} </h4>
         </div>`;
     }
